@@ -63,32 +63,32 @@
       <p class="sub">Soruları doldurup bize gönderin. Başvurular incelenecek ve uygun görülenlere yetkili rolü verilecektir.</p>
       <hr/>
 
-      <form>
+      <form action="https://formspree.io/f/xbjnopmn" method="POST">
         <label>1. Discord Adın ve Tagin:</label>
-        <input type="text" placeholder="Örn: babapiro#743867894537604"/>
+        <input type="text" name="discord_adi" placeholder="Örn: babapiro#743867894537604" required/>
 
         <label>2. Kaç yaşındasın?</label>
-        <input type="number" min="13" placeholder="Yaşınızı girin"/>
+        <input type="number" name="yas" min="13" placeholder="Yaşınızı girin" required/>
 
         <label>3. Aktif olduğun saatler ve günler:</label>
-        <textarea placeholder="Hangi saatlerde sunucuda olabiliyorsun?"></textarea>
+        <textarea name="aktif_saatler" placeholder="Hangi saatlerde sunucuda olabiliyorsun?" required></textarea>
 
         <label>4. Daha önce moderatör / yetkili tecrüben var mı?</label>
-        <textarea placeholder="Varsa nerelerde ve ne kadar süreyle?"></textarea>
+        <textarea name="tecrube" placeholder="Varsa nerelerde ve ne kadar süreyle?" required></textarea>
 
         <label>5. Sunucuda neden yetkili olmak istiyorsun?</label>
-        <textarea></textarea>
+        <textarea name="yetkili_olma_nedeni" required></textarea>
 
         <label>6. Kendini bize tanıt:</label>
-        <textarea></textarea>
+        <textarea name="kendini_tanit" required></textarea>
 
         <label>7. Eğer bir üye kuralları çiğnerse nasıl davranırsın?</label>
-        <textarea></textarea>
+        <textarea name="kural_ihlali_davranisi" required></textarea>
 
         <label>8. Eklemek istediğin başka bir şey var mı?</label>
-        <textarea></textarea>
+        <textarea name="ek_bilgi"></textarea>
 
-        <button class="btn">Başvuruyu Gönder</button>
+        <button class="btn" type="submit">Başvuruyu Gönder</button>
       </form>
     </div>
   </div>
