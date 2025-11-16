@@ -88,10 +88,23 @@
 
         <label>8. Eklemek istediğin başka bir şey var mı?</label>
         <textarea name="ek_bilgi"></textarea>
-
-        <button class="btn" type="submit">Başvuruyu Gönder</button>
+        <form
+  action="https://formspree.io/f/mvgdbgba"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
       </form>
     </div>
   </div>
 </body>
 </html>
+
